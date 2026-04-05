@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container-servicesection{
+    background-color: whitesmoke;
+    height: 80vh;
+}
+
+.smalltitle-servicesection{
+    text-align: center;
+    padding-top: 2rem;
+    color: orange;
+    font-size: 18px;
+}
+
+.maintitle-servicesection{
+    text-align: center;
+    font-weight: 900;
+}
+
+.container-mainservice{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+}
+
+.title-service1,.title-service2,.title-service3{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.container-paragrafservice1,.container-paragrafservice2,.container-paragrafservice3{
+    display: flex;
+    justify-content: center;
+}
+
+.paragraf-service1,.paragraf-service2,.paragraf-service3{
+    text-align: center;
+    margin-top: 10px;
+    width: 73%;
+}
+
+
+.container-imageservice1,.container-imageservice2,.container-imageservice3{
+    display: flex;
+    justify-content: center;
+}
+
+.image-service1{
+    width: 150px;
+}
+.image-service2{
+    width: 150px;
+}
+.image-service3{
+    width: 150px;
+}
+
+
+
+
+/* ===================================== */
+/* TABLET SERVICE SECTION */
+/* ===================================== */
+@media (max-width: 1024px) {
+
+    .container-servicesection{
+        background-color: whitesmoke;
+        height: auto;
+    }
+
+    .container-mainservice{
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      padding: 0 40px;
+    }
+  
+    .image-service1,
+    .image-service2,
+    .image-service3{
+      width: 130px;
+    }
+  
+    .maintitle-servicesection{
+      font-size: 32px;
+    }
+  
+  }
+
+
+
+
+
+  /* ===================================== */
+/* MOBILE SERVICE SECTION */
+/* ===================================== */
+@media (max-width: 768px) {
+
+    .container-servicesection{
+        background-color: whitesmoke;
+        height: auto;
+    }
+
+    .container-servicesection{
+      padding: 3rem 20px;
+    }
+  
+    .container-mainservice{
+      grid-template-columns: 1fr;
+      gap: 50px;
+      margin-top: 2rem;
+    }
+  
+    .maintitle-servicesection{
+      font-size: 26px;
+    }
+  
+    .smalltitle-servicesection{
+      font-size: 16px;
+    }
+  
+    .image-service1,
+    .image-service2,
+    .image-service3{
+      width: 120px;
+    }
+  
+    .paragraf-service1,
+    .paragraf-service2,
+    .paragraf-service3{
+      width: 90%;
+      font-size: 14px;
+    }
+  
+  }

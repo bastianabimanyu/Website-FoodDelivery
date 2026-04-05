@@ -1,0 +1,411 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container-navbar{
+  display: flex;
+  justify-content: center;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+.title-navbar{
+  color: orange;
+}
+
+.navbar>ul{
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.menu-navbar{
+  list-style: none;
+}
+
+.menu-navbar>a{
+  text-decoration: none;
+  color: black;
+}
+
+.containernavbar-right{
+  display: flex;
+  gap: 20px;
+}
+
+.button-navbar{
+  padding: 6px;
+  width: 100px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: orange;
+  color: white;
+}
+
+.buttonnavbar-gembok{
+  background: none;
+  border: none;
+}
+
+.container-keranjang{
+  position: relative;
+}
+
+.totalcount{
+  background-color: orange;
+  color: white;
+  text-align: center;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  width: 15px;
+  font-size: 14px;
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+
+.lockicoin{
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+a.active{
+  color: orange;
+  border-bottom: 3px solid orange;
+}
+
+.button-bars{
+  border: none;
+  background: transparent;
+  display: none;
+}
+
+.icon-bars{
+  font-size: 25px;
+}
+
+/* ===================================== */
+/* TABLET NAVBAR */
+/* ===================================== */
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .navbar > ul {
+    gap: 25px;
+  }
+
+  .button-navbar {
+    width: 90px;
+    font-size: 14px;
+  }
+
+}
+
+/* ===================================== */
+/* MOBILE NAVBAR */
+/* ===================================== */
+@media (max-width: 768px) {
+
+  .navbar {
+    position: relative;
+    z-index: 100;
+  }
+
+  /* Sembunyikan menu desktop */
+  .navbar > ul {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: white;
+    padding: 30px 0;
+    display: none;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+  /* Aktif ketika hamburger diklik */
+  .navbar > ul.active-menu {
+    display: flex;
+  }
+
+  /* Sembunyikan bagian kanan */
+  .containernavbar-right {
+    display: none;
+  }
+
+  /* Tampilkan tombol bars */
+  .button-bars {
+    display: block;
+  }
+
+}
+
+
+/* Container Footer */
+.containerfooter{
+  background-color: rgb(255, 222, 179);
+  height: 50vh;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  place-items: center;
+  padding-top: 3rem;
+}
+
+.container-footer1{
+  width: min-content;
+}
+
+.title-footer1{
+  color: orange;
+  font-size: 28px;
+}
+
+.paragraf-footer1{
+  color: grey;
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.container-medsosfooter1{
+  display: flex;
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.twitter,.instagram,.facebook,.googleplus{
+  font-size: 20px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.twitter:hover{
+  background-color: orange;
+  color: white;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.instagram:hover{
+  background-color: orange;
+  color: white;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.facebook:hover{
+  background-color: orange;
+  color: white;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.googleplus:hover{
+  background-color: orange;
+  color: white;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+
+.title-footer2{
+  font-size: 28px;
+}
+
+.ulfooter2{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.ulfooter2>li{
+  list-style: none;
+  color: grey;
+}
+
+
+
+
+.title-footer3{
+  font-size: 28px;
+}
+
+.ulfooter3{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.ulfooter3>li{
+  list-style: none;
+  color: grey;
+}
+
+
+
+
+
+.container-footer4{
+  width: min-content;
+}
+
+.title-footer4{
+   font-size: 28px;
+}
+
+.paragraf-footer4{
+  width: 60%;
+  margin-top: 1rem;
+  color: grey;
+}
+
+.input-footer4{
+  padding: 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border: none;
+  margin-top: 1rem;
+}
+
+/* ===================================== */
+/* TABLET (≤1024px) */
+/* ===================================== */
+@media (max-width: 1024px) {
+
+  .containerfooter{
+    height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    place-items: center;
+  }
+
+  .container-footer1,
+  .container-footer2,
+  .container-footer3,
+  .container-footer4{
+    width: 100%;
+  }
+
+  .paragraf-footer1,
+  .paragraf-footer4{
+    width: 100%;
+  }
+
+}
+
+
+/* ===================================== */
+/* MOBILE (≤768px) */
+/* ===================================== */
+@media (max-width: 768px) {
+
+  .containerfooter{
+    height: auto;
+    padding: 3rem 1.5rem;
+  }
+
+  .footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    place-items: center;  
+  }
+
+  .container-footer1,
+  .container-footer2,
+  .container-footer3,
+  .container-footer4{
+    width: 100%;
+  }
+
+  .paragraf-footer1,
+  .paragraf-footer4{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .containerfooter{
+    height: auto;
+    padding: 3rem 1.5rem;
+  }
+
+  .footer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    place-items: center; 
+    text-align: center; 
+  }
+
+  .container-medsosfooter1{
+    justify-content: center;
+  }
+
+  .container-footer1,
+  .container-footer2,
+  .container-footer3,
+  .container-footer4{
+    width: 100%;
+  }
+
+  .paragraf-footer1,
+  .paragraf-footer4{
+    width: 100%;
+  }
+
+}

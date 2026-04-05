@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-contactsection{
+    background-color: whitesmoke;
+    height: 80vh;
+}
+
+.container-contact{
+    padding-top: 4rem;
+}
+
+.minititle-contact{
+    text-align: center;
+    color: orange;
+}
+
+.title-contact{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 40px;
+}
+
+.container-paragrafcontact{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.paragraf-contact{
+    text-align: center;
+    width: 55%;
+}
+
+.container-inputcontact{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.container-input{
+    width: 500px;
+    position: relative;
+}
+
+.inputemail{
+    padding: 20px 0px 20px 20px;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 1px 2px black;
+    outline: none;
+}
+
+.button-contact>button{
+    padding: 10px 0px 10px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    background-color: orange;
+    color: white;
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+
+
+
+
+/* ================================= */
+/* TABLET CONTACT */
+/* ================================= */
+@media (max-width: 1024px){
+
+    .container-contactsection{
+        background-color: whitesmoke;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .title-contact{
+        font-size: 32px;
+    }
+  
+    .paragraf-contact{
+        width: 75%;
+    }
+  
+    .container-input{
+        width: 400px;
+    }
+
+    .inputemail{
+        padding: 20px 0px 20px 20px;
+        width: 100%;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border: none;
+        box-shadow: 1px 1px 1px 2px black;
+        outline: none;
+    }
+  
+}
+
+
+/* ================================= */
+/* MOBILE CONTACT */
+/* ================================= */
+@media (max-width: 768px){
+
+    .container-contactsection{
+        background-color: whitesmoke;
+        height: auto;
+    }
+
+    .container-contact{
+        padding: 3rem 20px;
+    }
+  
+    .title-contact{
+        font-size: 24px;
+    }
+  
+    .paragraf-contact{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .container-input2{
+        display: flex;
+        justify-content: center;
+    }
+  
+    .container-input{
+        width: 100%;
+    }
+  
+    .inputemail{
+        padding: 20px 0px 20px 20px;
+        width:100%;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border: none;
+        box-shadow: 1px 1px 1px 2px black;
+        outline: none;
+    }
+  
+    .button-contact > button{
+        position: static;
+        width: 100%;
+        margin-top: 1rem;
+    }
+  
+}

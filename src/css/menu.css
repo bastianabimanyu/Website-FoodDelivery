@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-menusection{
+    background-color: whitesmoke;
+    height: 160vh;
+}
+
+.container-listpesanan{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    height: 100vh;
+    position:fixed !important;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px black;
+    width: 350px;
+    height: auto;
+    padding: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.container-listpesanan2{
+    display: none;
+}
+
+.title-listmenu{
+    text-align: center;
+}
+
+.list-menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.list-menu>li{
+    list-style: none;
+}
+
+.croos-sign{
+    font-size: 25px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.container-navbarmenu{
+    margin-top: 3rem;
+}
+
+.minititle-menu{
+    text-align: center;
+    color: orange;
+    padding-top: 2rem;
+}
+
+.title-menu{
+    text-align: center;
+}
+
+.container-navbarmenu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-menu{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    place-items: center;
+    width: 100%;
+}
+
+.container-burger,.container-pizza,.container-fruit,.container-salad,.container-drinks,.container-friedrice{
+    padding: 8px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 0px black;
+    gap: 5px;
+}
+
+.button-burger{
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.button-pizza{
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.button-fruit{
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.button-salad{
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.button-drink{
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.button-friedrice{
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.title-burger{
+    font-size: 16px;
+}
+
+.title-pizza{
+    font-size: 16px;
+}
+
+.title-fruit{
+    font-size: 16px;
+}
+
+.title-salad{
+    font-size: 16px;
+}
+
+.title-drink{
+    font-size: 16px;
+}
+
+.title-friedrice{
+    font-size: 16px;
+}
+
+
+.container-cardproduct{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.container-product{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    gap: 60px;
+}
+
+.card{
+    padding: 8px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 3px 2px 2px 1px black;
+}
+
+.card:hover{
+    background-color: orange;
+}
+
+.title-product{
+    text-align: center;
+    font-size: 25px;
+    margin-top: rem;
+}
+
+.deskripsi-product{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 0.5rem;
+}
+
+.harga-product{
+    text-align: center;
+    margin-top: 0.5rem;
+    color: orange;
+}
+
+.card:hover .harga-product{
+    color: white;
+}
+
+.container-jumlah{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    display: none;
+}
+
+.card:hover .container-jumlah{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.container-jumlah2{
+    display: flex;
+    gap: 10px;
+}
+
+.button-kurang{
+    width: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.button-tambah{
+    width: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.jumlah-product{
+    font-size: 20px;
+}
+
+.active{
+    color: white;
+}
+
+.image-product{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width:1024px){
+    
+    .container-menusection{
+        background-color: whitesmoke;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .container-navbarmenu{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .navbar-menu{
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .container-burger,
+    .container-pizza,
+    .container-fruit,
+    .container-salad,
+    .container-drinks,
+    .container-friedrice{
+        width: 120px;
+        padding:10px;
+    }
+
+    .container-product{
+        grid-template-columns: repeat(2,1fr);
+        gap:40px;
+    }
+
+    .card{
+        width:260px;
+        height:300px;
+    }
+
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width:768px){
+    .container-menusection{
+        background-color: whitesmoke;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .container-navbarmenu{
+        overflow-x:auto;
+    }
+
+    .container-navbarmenu{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .navbar-menu{
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .container-burger,
+    .container-pizza,
+    .container-fruit,
+    .container-salad,
+    .container-drinks,
+    .container-friedrice{
+        width:110px;
+        padding:10px;
+        flex-shrink:0;
+    }
+
+    .container-cardproduct{
+        margin: 50px 30px 0px 30px;
+    }
+
+    .container-product{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .card{
+        padding: 8px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        width: 250px;
+        height: 300px;
+        background-color: white;
+        box-shadow: 3px 2px 2px 1px black;
+    }
+
+    .title-product{
+        font-size:24px;
+    }
+}
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width:480px){
+    .container-menusection{
+        background-color: whitesmoke;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .container-navbarmenu{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .navbar-menu{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .minititle-menu{
+        font-size:14px;
+    }
+
+    .title-menu{
+        font-size:26px;
+    }
+
+    .title-product{
+        font-size:22px;
+    }
+
+    .deskripsi-product{
+        font-size:13px;
+    }
+}

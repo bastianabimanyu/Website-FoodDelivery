@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-aboutussection1{
+    background-color: whitesmoke;
+    height: 80vh;
+}
+
+.container-aboutussection{
+    display: flex;
+    justify-content:center;
+    gap: 100px;
+    width: 100%;
+}
+
+.title-aboutsection{
+    text-align: center;
+    padding-top: 2rem;
+    color: orange;
+}
+
+.container-imageaboutus{
+    position: relative;
+}
+
+.imageaboutus{
+    width: 250px;
+    position: relative;
+    z-index: 1;
+}
+
+.background-imageaboutsus{
+    position: absolute;
+    z-index: 0;
+    background-color: orange;
+    padding: 150px;
+    border-top-left-radius:50px;
+    border-top-right-radius:50px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    top: 75px;
+    right: -20px;
+}
+
+.container-aboutusright{
+    z-index: 1;
+    width: 35%;
+    margin-top: 6rem;
+    position: relative;
+}
+
+.maincontainer-testimony{
+    width: 100%;
+    overflow: hidden; /* PENTING supaya card ke 2 keluar layar */
+}
+
+.maincontainer-testimony2{
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.container-testimony{
+    min-width: 100%; /* supaya tiap card full layar */
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+
+.header-testimony{
+    margin-top: 3rem;
+}
+
+.header-testimony2{
+    display: flex;
+    gap: 10px;
+}
+
+.containerstar-testimony{
+    display: flex;
+    gap: 5px;
+}
+
+.button-rating{
+    border: none;
+    background: transparent;
+}
+
+.text-testimony{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.button-lefttestimony{
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    padding: 5px;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.button-righttestimony{
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    padding: 5px;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+
+
+
+.container-aboutus2{
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container-aboutussection2{
+    margin:30px 40px 0px 40px;
+    background-color: rgb(255, 222, 179);
+    padding: 0px 60px 0px 60px;
+    width: max-content;
+    height: 480px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow-y: hidden;
+}
+
+.container-aboutussection22{
+    display: flex;
+    justify-content: center;
+}
+
+.container-aboutus22left{
+margin-top: 5rem;
+}
+
+.minititle-aboutus2{
+    color: orange;
+}
+
+.title-aboutus2{
+    margin-top: 1rem;
+    font-size: 40px;
+    width: 60%;
+}
+
+.paragraf-aboutus2{
+    margin-top: 1rem;
+    line-height: 20px;
+    width: 70%;
+    color: grey;
+}
+
+.button-aboutus2{
+    padding: 10px;
+    width: 120px;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: orange;
+    color: white;
+}
+
+.image-aboutus2{
+    width: 320px;
+    margin-top: 15rem;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.image-aboutus2:hover{
+    margin-top: 0rem;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+
+
+
+
+/* ================================= */
+/* TABLET ABOUT US */
+/* ================================= */
+@media (max-width: 1024px){
+
+    .container-aboutussection1{
+        background-color: whitesmoke;
+        height: auto;
+    }
+
+    .container-aboutus2{
+        background-color: whitesmoke;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .header-testimony2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-aboutussection{
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        padding: 0 40px;
+        width: auto;
+    }
+  
+    .container-aboutusright{
+        width: 80%;
+        margin-top: 0;
+        text-align: center;
+    }
+  
+    .background-imageaboutsus{
+        padding: 120px;
+        top: 60px;
+        right: -10px;
+    }
+  
+    .container-aboutussection22{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+    .title-aboutus2{
+        width: 100%;
+        font-size: 32px;
+    }
+  
+    .paragraf-aboutus2{
+        width: 100%;
+    }
+  
+    .image-aboutus2{
+        margin-top: 3rem;
+        width: 280px;
+    }
+  
+  }
+
+
+  /* ================================= */
+/* MOBILE ABOUT US */
+/* ================================= */
+@media (max-width: 768px){
+
+    .container-aboutussection1{
+        background-color: whitesmoke;
+        height: auto;
+    }
+
+    .container-aboutus2{
+        background-color: whitesmoke;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-aboutussection{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 0 20px;
+        overflow-x: hidden;
+        width: auto;
+    }
+  
+    .imageaboutus{
+        width: 200px;
+    }
+  
+    .background-imageaboutsus{
+        padding: 100px;
+        top: 60px;
+        right: -5px;
+    }
+  
+    .container-aboutusright{
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .header-testimony2{
+        display: flex;
+        justify-content: center;
+    }
+  
+    .title-testimony{
+        font-size: 24px;
+    }
+  
+    .container-texttestimony{
+        display: flex;
+        justify-content: center;
+    }
+
+    .text-testimony{
+        font-size: 14px;
+        width: 60%;
+    }
+  
+    .button-lefttestimony{
+        top: -30px;
+        left: 20px;
+    }
+  
+    .button-righttestimony{
+        top: -30px;
+        right: 20px;
+    }
+  
+    /* SECTION 2 */
+  
+    .container-aboutussection2{
+        margin: 20px;
+        padding: 40px 20px;
+        width: 100%;
+        height: auto;
+    }
+  
+    .container-aboutussection22{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+    .container-aboutus22left{
+        margin-top: 0;
+    }
+  
+    .title-aboutus2{
+        font-size: 26px;
+        width: 100%;
+    }
+  
+    .paragraf-aboutus2{
+        width: 100%;
+        font-size: 14px;
+    }
+  
+    .image-aboutus2{
+        width: 230px;
+        margin-top: 2rem;
+    }
+  
+  }
