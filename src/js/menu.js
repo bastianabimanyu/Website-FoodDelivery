@@ -1,8 +1,10 @@
+import cheeseburger from "../assets/image-menu/image-cheeseburger.png";
+
 // Data Product Burger //
 export const burger = [
   {
     id: 1,
-    image: "../src/assets/image-menu/image-cheeseburger.png",
+    image: "cheeseburger",
     title: "Cheese Burger",
     berat: "140g",
     harga: "Rp25.000"
