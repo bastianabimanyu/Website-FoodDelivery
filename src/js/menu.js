@@ -4,7 +4,7 @@ import cheeseburger from "../assets/image-menu/image-cheeseburger.png";
 export const burger = [
   {
     id: 1,
-    image: "cheeseburger",
+    image: cheeseburger,
     title: "Cheese Burger",
     berat: "140g",
     harga: "Rp25.000"
